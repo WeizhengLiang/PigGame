@@ -10,6 +10,8 @@
 </head>
 
 <body>
+
+
   <main>
     <section class="player player--0 player--active">
       <h2 class="name" id="name--0">Player 1</h2>
@@ -35,6 +37,21 @@
     <button class="btn btn--new">🔄 New game</button>
     <button class="btn btn--roll">🎲 Roll dice</button>
     <button class="btn btn--hold">📥 Hold</button>
+    <button class="btn btn--rule show-modal">⛳️ GAME RULE</button>
+
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1>Game Rule 😍</h1>
+      <p>
+        1. You need to reach 20 pts before your opponent does. <br><br>
+        2. There are only one way you can earn pts: roll the dice.<br><br>
+        3. Each time you hit ROLL, you temporarily get the same amount of pts as the dice is shown except when you roll
+        a 1.<br><br>
+        4. There are two ways you pass the round to your opponent: 1. hit the HOLD button to aquire all your temporary
+        pts. 2. Roll a 1 to lose all you temporary pts.
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
   </main>
   <script src="script.js"></script>
 </body>
